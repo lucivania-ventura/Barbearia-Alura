@@ -1,0 +1,137 @@
+header {
+  background: #bbbbbb; /* cor do cabeçalho*/
+  padding: 20px; /* px da parte de dentro do cabeçalho*/
+}
+
+.contato {
+  position: relative; /* posição da img e texto*/
+  width: 940px; /* tam padão de tela*/
+  margin: 0 auto; /* margem automatica para centralizar img e tex*/
+}
+
+nav {
+  position: absolute; /* posição do tex*/
+  top: 110px; /* altura do tex*/
+  right: 0; /* posição a direita do tex*/
+}
+
+li {
+  display: inline; /* diplay da lista de tex*/
+  margin: 0 0 0 15px; /* margem da lista tex a direita*/
+}
+
+a {
+  color: black; /* cor do text*/
+  text-decoration: none; /* tirando a decoração padrão tex*/
+  text-transform: uppercase; /* transformando em maiuscula o tex*/
+  font-weight: bold; /* fonte negrito*/
+  font-size: 22px; /* tam do tex*/
+}
+
+a:hover {
+  color: #c78c19; /* add uma animação ao passar o mouse por cima do tex muda a cor*/
+  text-decoration: underline; /* colocando um sublinado no tex*/
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+footer {
+  text-align: center; /* alinhar tex do footer*/
+  background: url(img/bg.jpg); /* img do footer (escura)*/
+  padding: 40px 0; /* espaçamento superior da img*/
+}
+
+.copyright {
+  color: white; /* cor do tex */
+  margin: 20px 0 0; /* margem a esquerda*/
+  font-size: 18px; /* tam da font do tex*/
+}
+
+/* forma molile*/
+
+@media screen and (max-width: 480px) {
+  .contato,
+  main,
+  form {
+    width: auto;
+  }
+
+  nav {
+    position: static;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    padding: 0 0 0 35px;
+  }
+
+  .enviar {
+    font-size: 15px;
+  }
+
+  table {
+    margin: 35px;
+  }
+}

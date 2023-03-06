@@ -1,0 +1,177 @@
+header {
+  background: #bbbbbb;
+  padding: 20px;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.primeiro {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+.primeiro-lista {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 15%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.beneficios {
+  background: #888888;
+}
+
+.beneficios-listas {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista {
+  width: 39%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+.itens::before {
+  content: "❃";
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.imagem-Beneficios {
+  width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-Beneficios:hover {
+  opacity: 0.3;
+}
+
+.video {
+  width: 560px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  background: url(img/bg.jpg);
+  padding: 40px 0;
+}
+
+.copyright {
+  color: white;
+  margin: 20px 0 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .caixa,
+  .principal,
+  .mapa-conteudo,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .primeiro {
+    position: static;
+  }
+
+  .beneficios-listas,
+  .imagem-Beneficios {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .utensilios {
+    margin: auto;
+  }
+
+  .principal p {
+    padding: 5px;
+    text-align: justify;
+  }
+}
